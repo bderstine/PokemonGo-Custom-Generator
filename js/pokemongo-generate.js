@@ -167,7 +167,6 @@ function myFunction() {
 
     var maploc = encodeURIComponent(document.getElementById("maplocation").value);
     var map = new Image();
-    var googlemapskey = "<add your google maps api key here>"
     map.src = "https://maps.googleapis.com/maps/api/staticmap?center="+maploc+"&size=580x375&zoom=12&key="+googlemapskey;
     ctx.drawImage(map, 35, 1035);
 
