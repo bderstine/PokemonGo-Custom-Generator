@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>PokemonGo.Cards :: Generate custom Pokemon Go cards!</title>
+    
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+      body {
+        padding-top: 70px; 
+      }
+      footer {
+        margin: 50px 0;
+      }
+    </style>
+</head>
+
+<body>
+
+    <!-- Page Content -->
+    
+  <div class="col-lg-6">
+    <h2>Customize the form values.</h2>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-success" onclick="myFunction()">Generate Card</button>
+  </div>
+
+  <div class="form-group">
+    <label for="backgroundimg">Background Image</label>
+    <input type="url" class="form-control" id="backgroundimg" name="backgroundimg" value="https://pokemongo.bizzartech.com/static/images/background.jpg">
+    <p class="help-block">Ideal size: 650px x 1024px</p>
+  </div>
+  <div class="form-group">
+    <label for="profileimg">Profile Image</label>
+    <input type="url" class="form-control" id="profileimg" name="profileimg" value="https://pokemongo.bizzartech.com/static/images/profile.png">
+    <p class="help-block">Ideal size: 200px x 200px</p>
+  </div>
+  <hr>
+
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input class="form-control" id="name" type="text" name="name" value="Brad Derstine">
+  </div>
+
+  <div class="form-group col-xs-6">
+    <label for="cpnumber">CP Number</label>
+    <input type="number" id="cpnumber" name="cpnumber" value="1200">
+    <p class="help-block">Enter a value between 1 and 1200</p>
+  </div>
+  <div class="form-group col-xs-6">
+    <label for="hpstring">HP String</label>
+    <input type="text" id="hpstring" name="hpstring" value="HP: 25/25">
+  </div>
+  <div style="clear:both;"></div>
+  <hr>
+
+  <div class="form-group col-xs-4">
+    <label for="field1value">Field 1 Value</label>
+    <input class="form-control" id="field1value" type="text" name="field1value" value="Unicorn">
+  </div>
+  <div class="form-group col-xs-4">
+    <label for="field2value">Field 2 Value</label>
+    <input class="form-control" id="field2value" type="text" name="field2value" value="200 lbs">
+  </div>
+  <div class="form-group col-xs-4">
+    <label for="field3value">Field 3 Value</label>
+    <input class="form-control" id="field3value" type="text" name="field3value" value="27 feet">
+  </div>
+
+  <div class="form-group col-xs-4">
+    <label for="field1name">Field 1 Name</label>
+    <input class="form-control" id="field1name" type="text" name="field1name" value="Type">
+  </div>
+  <div class="form-group col-xs-4">
+    <label for="field2name">Field 2 Name</label>
+    <input class="form-control" id="field2name" type="text" name="field2name" value="Weight">
+  </div>
+  <div class="form-group col-xs-4">
+    <label for="field3name">Field 3 Name</label>
+    <input class="form-control" id="field3name" type="text" name="field3name" value="Height">
+  </div>
+  <div style="clear:both"></div>
+  <hr>
+
+  <div class="form-group col-xs-6">
+    <label for="stardustnumber">Stardust Number</label>
+    <input type="number" id="stardustnumber" name="stardustnumber" value="1600">
+    <p class="help-block">Enter a value between 1 and 99,999</p>
+  </div>
+
+  <div class="form-group col-xs-6">
+    <label for="candyname">Candy Name</label>
+    <input type="text" id="candyname" name="candyname" value="Unicorn Candy">
+  </div>
+
+  <div class="form-group col-xs-6" style="float:right;">
+    <label for="candynumber">Candy Number</label>
+    <input type="number" id="candynumber" name="candynumber" value="49">
+    <p class="help-block">Enter a value between 1 and 500</p>
+  </div>
+  <div style="clear:both"></div>
+  <hr>
+
+  <div class="form-group col-xs-6">
+    <label for="skill1name">Skill 1 Name</label>
+    <input type="text" id="skill1name" name="skill1name" value="Punch">
+  </div>
+
+  <div class="form-group col-xs-6">
+    <label for="skill1value">Skill 1 Value</label>
+    <input type="number" id="skill1value" name="skill1value" value="10">
+  </div>
+
+  <div class="form-group">
+    <label for="skill1desc">Skill 1 Description</label>
+    <input type="text" id="skill1desc" name="skill1desc" value="This is your first skill description." size="75">
+  </div>
+
+  <div class="form-group col-xs-6">
+    <label for="skill2name">Skill 2 Name</label>
+    <input type="text" id="skill2name" name="skill2name" value="Kick">
+  </div>
+
+  <div class="form-group col-xs-6">
+    <label for="skill2value">Skill 2 Value</label>
+    <input type="number" id="skill2value" name="skill2value" value="30">
+  </div>
+
+  <div class="form-group">
+    <label for="skill2desc">Skill 2 Description</label>
+    <input type="text" id="skill2desc" name="skill2desc" value="This is your second skill description." size="75">
+  </div>
+  <hr>
+
+  <div class="form-group">
+    <label for="maplocation">Map Location</label>
+    <input type="text" id="maplocation" name="maplocation" value="Philadephia, PA" size="75">
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-success" onclick="myFunction()">Generate Card</button>
+  </div>
+
+  </div>
+  <!-- bottom of left col -->
+
+  <div class="col-lg-6">
+    <h2>Generate a Pokemon Go card!</h2>
+    <canvas id="myCanvas" width="650" height="1600" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    <canvas id="profileimage" width="300" height="300" style="display:none;"></canvas>
+  </div>
+
+
+    <!-- /.container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js"></script>
+    
+    <script src="js/pokemongo-generate.js"></script>
+
+</body>
+
+</html>
