@@ -3,7 +3,7 @@ function myFunction() {
       Visit http://console.developers.google.com/ and create a "Browser key" for the maps api
       and add it to the following variable between the double quotes.
     */
-    var googlemapskey = "<add your google maps api key here>"
+    var googlemapskey = "<add your google maps api key here>";
 
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
