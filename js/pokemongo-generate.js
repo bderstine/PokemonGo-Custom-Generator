@@ -1,4 +1,10 @@
 function myFunction() {
+    /* 
+      Visit http://console.developers.google.com/ and create a "Browser key" for the maps api
+      and add it to the following variable between the double quotes.
+    */
+    var googlemapskey = "<add your google maps api key here>"
+
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
 
@@ -161,7 +167,8 @@ function myFunction() {
 
     var maploc = encodeURIComponent(document.getElementById("maplocation").value);
     var map = new Image();
-    map.src = "https://maps.googleapis.com/maps/api/staticmap?center="+maploc+"&size=580x375&zoom=12&key=AIzaSyChCoWk_1Je0XLkwTvxC21ymqSDEis3Jxo";
+    var googlemapskey = "<add your google maps api key here>"
+    map.src = "https://maps.googleapis.com/maps/api/staticmap?center="+maploc+"&size=580x375&zoom=12&key="+googlemapskey;
     ctx.drawImage(map, 35, 1035);
 
     ctx.font = "14px Lota";
